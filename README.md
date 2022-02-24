@@ -2,6 +2,14 @@
 
 <b>Jexcel CE</b> has been renamed to <b>Jspreadsheet CE</b><br><br> 
 
+## News
+- <b>Important</b>: Please import jspreadsheet.css (jexcel.css is not longer available in this package).
+- Please use Jsuites v4
+- New mask system (https://jsfiddle.net/spreadsheet/vmjo34r8/)
+
+
+<br><br>
+
 [**Jspreadsheet CE**](https://bossanova.uk/jspreadsheet/v4/) is a lightweight Vanilla JavaScript plugin to create amazing web-based interactive HTML tables and spreadsheets compatible
 with other spreadsheet software. You can create an online spreadsheet table from a JS array,
 JSON, CSV or XSLX files. You can copy from excel and paste straight to your Jspreadsheet CE spreadsheet and vice versa.
@@ -29,13 +37,25 @@ requirements. It is a complete solution for web data management. Create amazing 
 
 ## Installation
 
-% npm install jspreadsheet-ce
+### As node package
+`npm install jspreadsheet-ce`
 
+### As standalone library/js plugin
 [Download ZIP](https://github.com/jspreadsheet/ce/archive/master.zip)
 
+put and use the files of `dist` folder in your project (js library and css files)
+
+### With a framework
+
+See examples section for code examples of jspreadsheets with popular frameworks
 ### Basic demo 
 
 A basic example to integrate the JavaScript spreadsheet in your website to create your first online spreadsheet. <https://codepen.io/hchiam/pen/qBRzXKK>
+
+
+#### Usage 
+
+Add jexcel/jspreadsheet and jsuites to your html file
 
 ```html
 <script src="https://bossanova.uk/jspreadsheet/v4/jexcel.js"></script>
@@ -70,7 +90,22 @@ jspreadsheet(document.getElementById('spreadsheet'), {
 });
 ```
 
+Serve your html file and then you will get the rendered table in your browser
+
+![sampleTable](./docs/sampleTable.png)
+
+
+## Development
+
+See [development](development.md)
+
 ## Examples
+
+- [Basic demo](./basic-demo.html)\
+Simple demo (as in codepen)
+
+- [Basic demo for developing](./basic-demo.html)\
+Demo using library from `dist` folder, ready to use for development of jspreadsheet
 
 - [React Implementation](https://bossanova.uk/jspreadsheet/v4/examples/react)\
 A full example on how to integrate Jspreadsheet CE with React.
@@ -247,29 +282,24 @@ We are glad to bring you the latest jQuery plugin version, with the following im
 
 
 ## Official websites
-- [Jspreadsheet CE v4 - Javascript Spreasheet](https://bossanova.uk/jspreadsheet/v4)
+- [Jspreadsheet CE v4 - Javascript Spreadsheet](https://bossanova.uk/jspreadsheet/v4)
 - [Jspreadsheet CE v3 - Vanilla JavaScript](https://bossanova.uk/jspreadsheet/v3)
 - [Jspreadsheet CE v2 - jQuery Plugin](https://bossanova.uk/jspreadsheet/v2)
 
-- [Jspreadsheet Pro v7 - Javascript Spreasheet](https://jexcel.net/v7)
+- [Jspreadsheet Pro v7 - Javascript Spreadsheet](https://jspreadsheet.com/v7)
+- [Jspreadsheet Pro v8 - Javascript Spreadsheet](https://jspreadsheet.com/v8)
 
 ## Community
 - [GitHub](https://github.com/jspreadsheet/ce/issues)
 
-## Compilation
+## Contributing
 
-To create a new distribution based on the source.
-
-docker-compose up
-docker-compose exec bash php
-
-% cd /bitnami/php-fpm/src
-% php compile.php
-
+See [contributing](contributing.md)
 
 ## Copyright and license
 Jspreadsheet CE is released under the [MIT license]. Contact <contact@jspreadsheet.com>
 
 ## Other interesting tools
 - [jSuites - JavaScript plugins & Webcomponents](https://jsuites.net)
-- [LemonadeJS](https://lemonadejs.net)
+- [Jspreadsheet Pro](https://jspreadsheet.com)
+- [LemonadeJS Reactive Library](https://lemonadejs.net)
